@@ -1,5 +1,5 @@
 """
-The index page which shows summary information about the dataset.
+The report pages which includes summary information about the project reports and related links.
 """
 
 import re, math
@@ -46,6 +46,7 @@ def _layout(app, es_helper):
 				clarity and reception of official messaging and the trustworthiness of information sources during the COVID-19 pandemic.
 		""") ]),
 		
+		
 		dbc.Row([
 			dbc.Col([
 				html.H4("Government management of the COVID-19 communication and public perception of the pandemic", className="mb-3 mt-3"),
@@ -90,6 +91,12 @@ def _layout(app, es_helper):
 					The second part of the report reflects on the comprehensibility of official messages sent from government accounts and the accounts of public health bodies. The analysis shows a wide range of language-related problems, ranging from complex use of vocabulary and grammar and vague references to inaccurate information and potential exclusion of some of the intended recipients. 
 					"""
 				], className="text-justify"),
+				
+				html.P([
+					html.A([
+						"Note that a previous version of this report was published on the UK Parliament Committees website."
+					], href="https://committees.parliament.uk/writtenevidence/36643/html/"),
+				]),
 			], width=12),
 		]),
 		
@@ -97,6 +104,50 @@ def _layout(app, es_helper):
 			dbc.Col([ ], width=6, className="text-left"),
 			dbc.Col([ html.A("Read the report >>>", href="http://www.open-access.bcu.ac.uk/id/eprint/11960", className="btn btn-primary") ], width=6, className="text-right")
 		]),
+		
+		
+		dbc.Row([
+			dbc.Col([
+				html.H4("TRAC:COVID Case study 2: misinformation, authority, and trust", className="mb-3 mt-3"),
+			
+				html.P([
+					"""					
+					Dr Mark McGlashan with Matt Gee, Dr Andrew Kehoe, Dr Robert Lawson, and Dr Tatiana Tkacukova
+					"""
+				]),
+				html.P([
+					"""
+					School of English, Birmingham City University 
+					"""
+				]),
+			
+				html.H5("Executive summary", className="mb-3"),
+			
+				html.P([
+					"""
+					This case study reports on a study of COVID-19 vaccine misinformation on Twitter and focuses on the scale and variety of iterations of vaccination hesitancy, misinformation and conspiracy theories in ~84 million tweets sampled between 1st January 2020 and 30th April 2021. Findings suggest that COVID-19-specific anti-vaccination (i.e. anti-vax) discourse is underpinned by political (dis)trust, fears of corruption, concerns over safety, and exists within a wider conspiracy theory network.
+					"""
+				], className="text-justify"),
+				html.Ol([
+					html.Li(["Despite the presence of vaccine misinformation, the majority of tweets about vaccines in relation to COVID-19 either do not contain – or are critical of – vaccine misinformation."]),
+					html.Li(["COVID-19 vaccine misinformation exists within a wider web of misinformation and conspiracy theories in which attempts are made to undermine confidence and trust in vaccines, health professionals, and policy-makers."]),
+					html.Li(["Anti-vax tweets often reference multiple anti-vax ideas as well as conspiracy theories not specifically linked to vaccines."]),
+					html.Li(["Thus, vaccine misinformation can be communicated in numerous ways and alongside other forms of misinformation, making both the identification of an archetypal anti-vax stance and the disaggregation of concerns that inform anti-vax stances difficult, if not impossible."]),
+					html.Li(["Moreover, given relationships within and between anti-vax ideas and broader conspiracy theories, anti-vax content could be regarded as a vector for the spread of numerous forms of misinformation."]),
+					html.Li(["These relationships – investigated in this case study through hashtag co-occurrences – provides valuable insights into the ‘discursive landscape’ of vaccine misinformation and the forms of misinformation and conspiracy theories to which COVID-19 misinformation is related."]),
+					html.Li(["However, due to the various forms and configurations through which misinformation may be realised and communicated, there is no silver bullet to prevent or detect vaccine misinformation."]),
+					html.Li(["Some misinformation contains language directly related to known conspiracy theories (e.g. nwo), but other forms are exceptionally novel, subtle, evolving, and, indeed, are designed to circumvent automated moderation systems put in place by social media sites."]),
+					html.Li(["The ongoing role of expert human analysts in interpreting these linguistic behaviours is therefore crucial."]),
+					html.Li(["More broadly, the outcomes of this case study suggest a need to investigate the social and political conditions that result in social alienation and distrust, which informs anti-vaccination and conspiratorial beliefs. More comprehensive understanding of distrust facilitates understanding of how and why misinformation has been so pervasive and enduring throughout the pandemic."]),
+				]),
+			], width=12),
+		]),
+		
+		dbc.Row([
+			dbc.Col([ ], width=6, className="text-left"),
+			dbc.Col([ html.A("Read the report >>>", href="http://www.open-access.bcu.ac.uk/id/eprint/12011", className="btn btn-primary") ], width=6, className="text-right")
+		]),
+		
 		
 		dbc.Row([ html.H3("Dashboard", className="mb-3 mt-5") ]),
 		
