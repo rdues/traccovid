@@ -57,6 +57,8 @@ def _footer():
 					dbc.Col([
 						html.A("Project Details", href="https://www.bcu.ac.uk/english/research/english-linguistics/rdues/research-projects/trac-covid"),
 						html.Br(),
+						html.A("GitHub Repository", href="https://github.com/rdues/traccovid"),
+						html.Br(),
 						"Contact ",
 						html.A("@traccovid", href="https://twitter.com/traccovid"),
 						html.Br(),

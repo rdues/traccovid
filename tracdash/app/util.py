@@ -24,7 +24,7 @@ import pandas as pd
 import networkx as nx
 
 
-DASHBOARD_VERSION = "1.2"
+DASHBOARD_VERSION = "1.3"
 
 
 
@@ -72,14 +72,13 @@ def callback_log(func):
 
 # dashboard consts
 
+# update as appropriate
 MIN_DATE = datetime(2020, 1, 1)		# for use with date picker
-MAX_DATE = datetime(2021, 5, 1)	# date picker requires following day (bug in plotly?)
+MAX_DATE = datetime(2021, 5, 1)		# date picker requires following day (bug in plotly?)
 MIN_DATE_PLACEHOLDER = '01 Jan 2020'
 MAX_DATE_PLACEHOLDER = '30 Apr 2021'
 
-# COLOUR_SEQUENCE = ['#008cba', '#6f42c1', '#f04124', '#e99002', '#20c997', '#6610f6', '#e83e8c', '#fd7e14', '#43ac6a', '#5bc0de']
 COLOUR_SEQUENCE = px.colors.qualitative.D3
-
 DEFAULT_COLOUR = COLOUR_SEQUENCE[0]
 DEFAULT_COLOUR_SEQUENCE = [ DEFAULT_COLOUR ]
 DEFAULT_LIGHT_COLOUR = 'rgb(202, 222, 240)'

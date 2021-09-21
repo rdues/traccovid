@@ -49,7 +49,7 @@ def _layout(app, es_helper):
 		
 		dbc.Row([
 			dbc.Col([
-				html.H4("Government management of the COVID-19 communication and public perception of the pandemic", className="mb-3 mt-3"),
+				html.H4("TRAC:COVID Case Study 1: Government management of the COVID-19 communication and public perception of the pandemic", className="mb-3 mt-3"),
 			
 				html.P([
 					"""
@@ -83,7 +83,9 @@ def _layout(app, es_helper):
 				]),
 				html.P([
 					"""
-					The report is based on the results of the UKRI/AHRC-funded TRAC:COVID project carried out at Birmingham City University. The first section draws on the dashboard created as part of the project, accessible online at https://traccovid.com. The dashboard is an open access tool based on 84,138,394 tweets related to coronavirus posted by users in the UK between 1st January 2020 and 30th April 2021. The tool helps explore how social media have been used in the UK during the pandemic to talk about COVID-19. Our analysis shows that throughout the pandemic there has been a widespread support for the main measures used to contain the COVID-19 virus outbreak. In fact, a considerable number of tweets supported the introduction of even stronger measures than those imposed by the government, and many criticised non-compliance as a sign of selfish behaviour. The results also indicate a presence of users who actively used terms related to conspiracy theories and, although these views were found to be in the minority, it is important not to underestimate the role they play in undermining the efforts to contain the pandemic.  
+					The report is based on the results of the UKRI/AHRC-funded TRAC:COVID project carried out at Birmingham City University. The first section draws on the """,
+					html.A("dashboard", href="dashboard"),
+					""" created as part of the project. The dashboard is an open access tool based on 84,138,394 tweets related to coronavirus posted by users in the UK between 1st January 2020 and 30th April 2021. The tool helps explore how social media have been used in the UK during the pandemic to talk about COVID-19. Our analysis shows that throughout the pandemic there has been a widespread support for the main measures used to contain the COVID-19 virus outbreak. In fact, a considerable number of tweets supported the introduction of even stronger measures than those imposed by the government, and many criticised non-compliance as a sign of selfish behaviour. The results also indicate a presence of users who actively used terms related to conspiracy theories and, although these views were found to be in the minority, it is important not to underestimate the role they play in undermining the efforts to contain the pandemic.  
 					"""
 				], className="text-justify"),
 				html.P([
@@ -93,22 +95,30 @@ def _layout(app, es_helper):
 				], className="text-justify"),
 				
 				html.P([
+					"The results of this study featured in the ",
 					html.A([
-						"Note that a previous version of this report was published on the UK Parliament Committees website."
+						html.Em("Initial lessons from the government’s response to the COVID-19 pandemic"),
+						" House of Commons report",
+					], href="https://committees.parliament.uk/publications/6954/documents/73046/default/"),
+					", to which a previous version of this ",
+					html.A([
+						"case study was submitted as evidence",
 					], href="https://committees.parliament.uk/writtenevidence/36643/html/"),
+					"."
 				]),
+
 			], width=12),
 		]),
 		
 		dbc.Row([
 			dbc.Col([ ], width=6, className="text-left"),
-			dbc.Col([ html.A("Read the report >>>", href="http://www.open-access.bcu.ac.uk/id/eprint/11960", className="btn btn-primary") ], width=6, className="text-right")
+			dbc.Col([ html.A("Read the case study >>>", href="http://www.open-access.bcu.ac.uk/id/eprint/11960", className="btn btn-primary") ], width=6, className="text-right")
 		]),
 		
 		
 		dbc.Row([
 			dbc.Col([
-				html.H4("TRAC:COVID Case study 2: misinformation, authority, and trust", className="mb-3 mt-3"),
+				html.H4("TRAC:COVID Case Study 2: misinformation, authority, and trust", className="mb-3 mt-3"),
 			
 				html.P([
 					"""					
@@ -145,7 +155,7 @@ def _layout(app, es_helper):
 		
 		dbc.Row([
 			dbc.Col([ ], width=6, className="text-left"),
-			dbc.Col([ html.A("Read the report >>>", href="http://www.open-access.bcu.ac.uk/id/eprint/12011", className="btn btn-primary") ], width=6, className="text-right")
+			dbc.Col([ html.A("Read the case study >>>", href="http://www.open-access.bcu.ac.uk/id/eprint/12011", className="btn btn-primary") ], width=6, className="text-right")
 		]),
 		
 		

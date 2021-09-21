@@ -15,7 +15,7 @@ port = 8080
 path = "/tracdash/"
 
 
-es = Elasticsearch(es_ips, timeout=(60*60))
+es = Elasticsearch(es_ips, timeout=(60*5))
 
 app = tracdash.prepare_app(es, es_index, cache_path=es_cache, path=path)
 
