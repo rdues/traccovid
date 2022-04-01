@@ -65,7 +65,7 @@ def _footer():
 						html.Br(),
 						html.A("Terms and Privacy Policy", href="/traccovid/assets/terms.html"),
 						html.Br(),
-						html.A("Accessibility Statement", href="/traccovid/assets/accessibility.html"),
+						html.A("Accessibility Statement", href="https://www.webcorp.org.uk/live/accessibility.jsp"),
 					], width=4, className="text-left"),
 					
 					dbc.Col([
